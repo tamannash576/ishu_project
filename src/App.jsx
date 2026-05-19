@@ -1,47 +1,68 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-//import Header from './Component/Header';
-import Navbar from './Component/Navbar';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
-import Appointment from './Pages/Appointment';
-import Login from './Pages/Login';
-import MyProfile from './Pages/Myprofile';
-import Footer from './Component/Footer';
-import DoctorProfile from './Pages/Doctorprofile';
-import RelatedDoctor from './Component/Relateddoctor';
-import Register from './Pages/Register';
-
-
+import React, { useInsertionEffect, useState } from 'react'
 
 function App() {
+  /*const student=[{ name:'Tamanna sharma', age:22},
+   {name:'anuj sharma', age:27},
+   {name:'avisha sharma', age:27},
+   {name:'viaan sharma', age:27},
+  
+  ]
+  
+  // map ex
+  
+  const name=student.map(student=>student.name);
+  console.log(name)
   return (
-    <Router>
+   <div>
+     <h1>Student Names:</h1>
+     <ul>
+       {name.map((name, index) => (
+         <li key={index}>{name}</li>
+       ))}
+     </ul>
+   </div>
+  );*/
 
-      <Navbar />
 
-      <div className="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/appointment" element={<Appointment />} />
-          <Route path="/appointment/:id" element={<Appointment />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/myprofile" element={<MyProfile />} />
-          <Route path="/Doctorprofile" element={<DoctorProfile />} />
-          <Route path="/Doctorprofile/:id" element={<DoctorProfile />} />
-          <Route path="/Relateddoctor/:id" element={<RelatedDoctor />} />
-          <Route path="/Relateddoctor" element={<RelatedDoctor />} />
-          <Route path="/Register" element={<Register />} />
-        </Routes>
-      </div>
+  //filter ex
 
-      <Footer />
-    </Router>
-  );
+
+  /*const Usersage = student.filter(s => s.age);
+  console.log(Usersage)*/
+  // find
+  /*const user = student.find(user => user.age===22);
+  console.log(user)*/
+
+
+  // some
+
+
+  /*const scores = [10, 20, 30];
+  const High = scores.some(score => score > 25);
+  console.log(High)*/
+
+  //includes
+
+
+  /*const fruits= ["apple", "banana","mango","cherry"];
+  const Selected = fruits.includes("banana");*/
+  //console.log(Selected)
+
+
+  //indexof
+
+
+  /*const current = "banana";
+  const index = fruits.indexOf(current);
+  console.log(index)*/
+
+  //slice
+
+
+  /*const firstThree = fruits.slice(0, 3);
+  console.log(firstThree)*/
 }
 
-export default App;
+
+
+export default App
